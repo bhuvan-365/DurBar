@@ -1,0 +1,22 @@
+/* datepicker.css */
+.react-datepicker {
+  background-color: #0b1315;
+  border: 1px solid #c9ab81;
+  color: #fff;
+}
+
+.react-datepicker__header {
+  background-color: #c9ab81;
+  color: #000;
+}
+
+.react-datepicker__day-name,
+.react-datepicker__day,
+.react-datepicker__time-name {
+  color: #fff;
+}
+
+.react-datepicker__day--selected {
+  background-color: #c9ab81;
+  color: #000;
+}
