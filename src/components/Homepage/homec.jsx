@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Navbar from '../navbarc';
 import AboutC from '../Aboutpage/aboutc';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -56,7 +55,7 @@ const HomeC = () => {
       >
         <div className="absolute inset-0 bg-black/50 z-0"></div>
 
-        <Navbar />
+
 
         {/* Animated Slide Content */}
         <AnimatePresence mode="wait">
@@ -79,11 +78,11 @@ const HomeC = () => {
 
         {/* Arrows */}
         <div className="absolute left-5 top-1/2 z-10 text-white text-xl cursor-pointer" onClick={prevSlide}>
-          <FaChevronLeft />
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25.109px" height="34.906px" viewBox="0 0 25.109 34.906" enable-background="new 0 0 25.109 34.906" xml:space="preserve">                    <polyline fill="none" stroke="currentColor" stroke-miterlimit="10" points="24.67,34.59 11.653,17.464 24.67,0.338 "></polyline>                    <polyline fill="none" class="eltdf-popout" stroke="currentColor" stroke-miterlimit="10" points="13.688,34.59 0.671,17.464 13.688,0.338 "></polyline></svg>
         </div>
-        <div className="absolute right-5 top-1/2 z-10 text-white text-xl cursor-pointer" onClick={nextSlide}>
-          <FaChevronRight />
-        </div>
+        <div className="absolute right-5 top-1/2 z-10 text-white text-xl cursor-pointer rotate-180" onClick={nextSlide}>
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25.109px" height="34.906px" viewBox="0 0 25.109 34.906" enable-background="new 0 0 25.109 34.906" xml:space="preserve">                    <polyline fill="none" stroke="currentColor" stroke-miterlimit="10" points="24.67,34.59 11.653,17.464 24.67,0.338 "></polyline>                    <polyline fill="none" class="eltdf-popout" stroke="currentColor" stroke-miterlimit="10" points="13.688,34.59 0.671,17.464 13.688,0.338 "></polyline></svg>       
+         </div>
 
         {/* Pagination Dots */}
         <div className="absolute bottom-6 z-10 flex gap-3">
@@ -91,9 +90,8 @@ const HomeC = () => {
             <div
               key={index}
               onClick={() => setCurrent(index)}
-              className={`w-4 h-4 rounded-full cursor-pointer border border-white ${
-                index === current ? "bg-white" : "bg-transparent"
-              }`}
+              className={`w-2 h-2 rounded-full cursor-pointer border border-white ${index === current ? "bg-white" : "bg-transparent"
+                }`}
             ></div>
           ))}
         </div>

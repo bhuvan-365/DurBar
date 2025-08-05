@@ -2,7 +2,7 @@ import React from "react";
 import Aboutc2 from './aboutc2'
 import Aboutc3 from './aboutc3'
 import Aboutmenu from "./aboutmenu";
-import Ourmenu from './ourmenu'
+import Ourmenu from './abtmenu2'
 import AbtBook from './abtbooking'
 
 const AboutUs = () => {
