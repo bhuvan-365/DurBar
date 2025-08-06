@@ -5,7 +5,8 @@ const ContactUs = () => {
 
   return (
     <section className="bg-[#0b1315] text-[#e2c08d] font-serif py-20 px-32 md:px-16">
-      <div className=' flex justify-center items-center py-22 pb-32'>
+      <div className="head text-center font3 mt-8">Our Location</div>
+      <div className=' flex justify-center items-center py-18 pb-32'>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.816872676086!2d-73.99161138459322!3d40.74329997932847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xabcdefabcdef1234!2sSome+Place!5e0!3m2!1sen!2sus!4v1615197737710!5m2!1sen!2sus"
           width="60%"

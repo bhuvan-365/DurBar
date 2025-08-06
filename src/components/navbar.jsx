@@ -1,53 +1,174 @@
-import React from 'react';
-import { FaFacebookF, FaInstagram, FaPhoneAlt } from 'react-icons/fa';
-import { IoIosArrowDown } from 'react-icons/io';
+import React, { useEffect, useRef, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
+    const navRef = useRef(null);
+    const logoRef = useRef(null);
+    const dropdownRef = useRef(null);
+    const location = useLocation();
+    const [isAtTop, setIsAtTop] = useState(true);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isVisible, setIsVisible] = useState(true);
+    const lastScrollPosition = useRef(0);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
+    // Close menu when a link is clicked
+    const closeMenu = () => {
+        setIsMenuOpen(false);
+    };
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollPosition = window.pageYOffset;
+            const scrollingDown = currentScrollPosition > lastScrollPosition.current;
+            lastScrollPosition.current = currentScrollPosition;
+
+            // Check if at top of page
+            const atTop = currentScrollPosition === 0;
+            setIsAtTop(atTop);
+
+            // Close menu when scrolling
+            if (!atTop && isMenuOpen) {
+                setIsMenuOpen(false);
+            }
+
+            // Handle scroll down (hide)
+            if (scrollingDown && currentScrollPosition > 100) {
+                setIsVisible(false);
+            }
+            // Handle scroll up (show)
+            else if (!scrollingDown) {
+                setIsVisible(true);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, [isMenuOpen]);
+
+    // Check if current path matches the link
+    const isActive = (path) => {
+        return location.pathname === path;
+    };
+
     return (
         <>
-            {/* Navbar Container */}
-            <div className="relative w-full z-50">
-                {/* Fixed Top Navbar */}
-                <div className="fixed top-0 left-0 w-full flex justify-between items-center p-10 px-16 bg-transparent text-white font-sans z-50">
-                    
-                    {/* Left - MENU & Social Icons */}
-                    <div className='flex justify-center items-center gap-10'>
-                        <div className="flex items-center gap-1 cursor-pointer group relative">
-                            <span className="text-sm font-semibold">MENU</span>
-                            <IoIosArrowDown size={20} className="mt-[2px]" />
-                            {/* Dropdown */}
-                            <div className="absolute top-8 left-0 hidden group-hover:block bg-black text-white py-2 px-4 rounded shadow-lg">
-                                <ul>
-                                    <li className="hover:text-yellow-400 cursor-pointer">Home</li>
-                                    <li className="hover:text-yellow-400 cursor-pointer">Menu</li>
-                                    <li className="hover:text-yellow-400 cursor-pointer">About</li>
-                                    <li className="hover:text-yellow-400 cursor-pointer">Contact</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className='flex items-center gap-6'>
-                            <a href="#" className="hover:text-yellow-400 text-xl"><FaFacebookF /></a>
-                            <a href="#" className="hover:text-yellow-400 text-xl"><FaInstagram /></a>
-                        </div>
-                    </div>
-
-                    {/* Center - Logo */}
-                    <div className="absolute left-1/2 transform -translate-x-1/2">
-                        <img src="/src/assets/image/hlogo.webp" alt="Logo" className="h-[100px] w-[100px] mt-10 rounded-full" />
-                    </div>
-
-                    {/* Right - Reservation & Phone */}
-                    <div className="flex items-center gap-10">
-                        <button className="uppercase font-semibold text-sm hover:text-yellow-400">
-                            Reservation
-                        </button>
-                        <a href="#" className="hover:text-yellow-400 text-3xl"><FaPhoneAlt /></a>
-                    </div>
+            <nav
+                ref={navRef}
+                className={`fixed top-0 z-50 w-full flex items-center justify-between px-14 transition-transform duration-200 ${
+                    isAtTop ? 'bg-transparent' : 'bg-black/10 backdrop-blur-[1px]'
+                } ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}
+            >
+                <div className="flex-1">
+                    <div className="font4 text-white w-max">Reservation</div>
                 </div>
 
-                {/* Bottom Line (under navbar, behind logo) */}
-                {/* <div className="fixed top-[90px] left-0 w-full h-[1px] bg-[#f0bd69] z-40 "></div> */}
+                <div className="flex-1 flex justify-center" ref={logoRef}>
+                    <img
+                        className='h-full object-contain transition-all duration-200 max-h-[170px]'
+                        src="/src/assets/image/nobg-Logo.png"
+                        alt="logo"
+                        style={{
+                            width: isAtTop ? '200px' : '150px',
+                            height: isAtTop ? '170px' : '120px'
+                        }}
+                    />
+                </div>
+
+                <div className="flex-1 flex justify-end">
+                    <div className="flex items-center gap-4">
+                        <div className="call flex items-center gap-1 text-white">
+                            <img className='filter invert' src="/src/assets/svg/call.svg" alt="call icon" />
+                            <span>+977 9812345678</span>
+                        </div>
+                        <button
+                            className="ham focus:outline-none"
+                            onClick={toggleMenu}
+                            aria-label="Menu"
+                        >
+                            <img
+                                className={`filter invert w-[40px] transition-transform duration-200 ${
+                                    isMenuOpen ? 'rotate-90' : ''
+                                }`}
+                                src="/src/assets/svg/hamburger.svg"
+                                alt="hamburger"
+                            />
+                        </button>
+                    </div>
+                </div>
+            </nav>
+
+            {/* Dropdown Menu */}
+            <div
+                ref={dropdownRef}
+                className={`fixed top-0 left-0 right-0 z-40 bg-black bg-opacity-90 backdrop-blur-md overflow-hidden transition-all duration-300 ${
+                    isMenuOpen ? 'h-auto opacity-100' : 'h-0 opacity-0'
+                }`}
+                style={{
+                    marginTop: navRef.current?.offsetHeight || '80px'
+                }}
+            >
+                <div className="container mx-auto px-14 py-6">
+                    <ul className="flex flex-col gap-6 text-white text-xl">
+                        <Link 
+                            to="/" 
+                            className={`menu-link ${isActive('/') ? 'text-[#f3c97c]' : ''}`}
+                            onClick={closeMenu}
+                        >
+                            <span className='menu-title'>HOME</span>
+                        </Link>
+                        <Link 
+                            to="/ourmenu" 
+                            className={`menu-link ${isActive('/ourmenu') ? 'text-[#f3c97c]' : ''}`}
+                            onClick={closeMenu}
+                        >
+                            <span className='menu-title'>OurMenu</span>
+                        </Link>
+                        <Link 
+                            to="/aboutus" 
+                            className={`menu-link ${isActive('/aboutus') ? 'text-[#f3c97c]' : ''}`}
+                            onClick={closeMenu}
+                        >
+                            <span className='menu-title'>About US</span>
+                        </Link>
+                        <Link 
+                            to="/gallery" 
+                            className={`menu-link ${isActive('/gallery') ? 'text-[#f3c97c]' : ''}`}
+                            onClick={closeMenu}
+                        >
+                            <span className='menu-title'>Gallery</span>
+                        </Link>
+                        <Link 
+                            to="/contact" 
+                            className={`menu-link ${isActive('/contact') ? 'text-[#f3c97c]' : ''}`}
+                            onClick={closeMenu}
+                        >
+                            <span className='menu-title'>Contact</span>
+                        </Link>
+                        <Link 
+                            to="/blogs" 
+                            className={`menu-link ${isActive('/blogs') ? 'text-[#f3c97c]' : ''}`}
+                            onClick={closeMenu}
+                        >
+                            <span className='menu-title'>BLOGS</span>
+                        </Link>
+                    </ul>
+                </div>
             </div>
+
+            {/* Overlay */}
+            {isMenuOpen && (
+                <div
+                    className="fixed inset-0 z-30 bg-black bg-opacity-50"
+                    onClick={toggleMenu}
+                />
+            )}
+
+            {/* Add this to your CSS or as Tailwind classes */}
+
         </>
     );
 };

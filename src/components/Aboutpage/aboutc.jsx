@@ -12,7 +12,7 @@ const AboutUs = () => {
       <div className="text-center max-w-2xl mx-auto mb-12">
         <p className="text-[#b39770] italic mb-2 font2">Our Story</p>
         <h2 className="text-4xl font-bold tracking-widest text-[#b39770] mb-4">
-          <span className="inline-block w-12 border-t-2 border-[#b39770] mr-4 align-middle font3" />
+          <span className="inline-block w-12 border-t-2 border-[hsl(35,31%,57%)] mr-4 align-middle font3" />
           ABOUT US
           <span className="inline-block w-12 border-t-2 border-[#b39770] ml-4 align-middle" />
         </h2>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom'; // Make sure React Router is set up
+import { useNavigate } from 'react-router-dom'; 
 
 const OurMenu = () => {
     const navigate = useNavigate();

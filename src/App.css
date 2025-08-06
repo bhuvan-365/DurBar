@@ -2,29 +2,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 @import url('https://db.onlinewebfonts.com/c/7e3af031676fa15d981440d56cf4773a?family=Metropolis1920+Regular');
-.font1
-{font-family: "Open Sans Condensed";
-font-style: normal;
-font-weight: 500;
 
-font-size: 14px;
-line-height: 30px;
-letter-spacing: 2px; 
+.font1 {
+  font-family: "Open Sans Condensed";
+  font-style: normal;
+  font-weight: 500;
+
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 2px;
 }
-.font-pop{
+
+.font-pop {
   font-family: "Poppins", sans-serif;
 
 }
-.font11
-{font-family: "Open Sans Condensed";
-font-style: normal;
 
-color: rgb(255, 255, 255);
-font-size: 2.5rem;
-line-height: 50px;
-letter-spacing: 12px; 
- color: rgb(201, 171, 129);
+.font11 {
+  font-family: "Open Sans Condensed";
+  font-style: normal;
+
+  color: rgb(255, 255, 255);
+  font-size: 2.5rem;
+  line-height: 50px;
+  letter-spacing: 12px;
+  color: rgb(201, 171, 129);
 }
+
 .font2 {
   font-family: 'Miniver', sans-serif;
   font-style: normal;
@@ -33,10 +37,12 @@ letter-spacing: 12px;
   line-height: 28px;
   color: rgb(201, 171, 129);
 }
-.font22{
-  font-family: 'Miniver', sans-serif; 
+
+.font22 {
+  font-family: 'Miniver', sans-serif;
 
 }
+
 .font3 {
   font-family: 'caviar_dreamsbold', sans-serif;
   font-style: normal;
@@ -45,15 +51,52 @@ letter-spacing: 12px;
   line-height: 61px;
   color: rgb(201, 171, 129);
 }
+
 .hero-text {
- font-family: "Metropolis1920 Regular";
+  font-family: "Metropolis1920 Regular";
   font-weight: 100;
   font-style: normal;
   font-size: 7rem;
   line-height: 145px;
   color: rgb(201, 171, 129);
 }
-.font4{
-     font-family: "Josefin Sans", sans-serif;
+
+.font4 {
+  font-family: "Josefin Sans", sans-serif;
 }
 
+
+/* Container link */
+.menu-link {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* The span containing the text */
+.menu-title {
+  position: relative;
+  display: inline-block;
+  color: inherit;
+}
+
+/* Animated underline using ::after */
+.menu-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #c9ab81;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+/* Trigger underline on hover */
+.menu-link:hover .menu-title::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
