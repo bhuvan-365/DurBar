@@ -5,19 +5,19 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const slides = [
   {
-    bg: "/src/assets/image/homebanner.jpg",
+    bg: "/assets/image/homebanner.jpg",
     title: "The Finest drinks",
     subtitle: "take a sip of our innovation drink",
     desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi dolores, beatae ut maiores sapiente cumque!"
   },
   {
-    bg: "/src/assets/image/food.jpg",
+    bg: "/assets/image/food.jpg",
     title: "Refreshing Blends",
     subtitle: "crafted to perfection",
     desc: "Exquisite flavor profiles to delight your senses. Try our latest summer blend now!"
   },
   {
-    bg: "/src/assets/image/food2.jpg",
+    bg: "/assets/image/food2.jpg",
     title: "Bold and Unique",
     subtitle: "where tradition meets innovation",
     desc: "Discover a range of drinks you’ve never tasted before—because you deserve more than ordinary."
