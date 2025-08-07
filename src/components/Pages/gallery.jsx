@@ -17,9 +17,9 @@ const gallery = () => {
   ];
   return (
     <>
-      <section className=' bg-[#0b1315]'>
+      <section className=' bg-[#0b1315] pt-36'>
 
-        <div className="flex justify-center items-center gap-8 text-[#C9AB81] py-28 pt-36 ">
+        <div className="flex justify-center items-center gap-8 text-[#C9AB81] py-28  ">
           <div className="decor">
             <svg xmlns="http://www.w3.org/2000/svg" width="41.125" height="9.146">
               <path fill="none" stroke="#9C7C57" strokeMiterlimit="10" d="M40.881 8.576L20.562.591.244 8.576" />

@@ -8,6 +8,7 @@ import Blog from './components/Blogs/Blog'
 import Navbar from './components/navbar'
 import PageOurMenu from './components/Pages/ourmenu'
 import SocialLinks from '../src/components/links'
+import Reservation from './components/reservation';
 import './App.css'
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Route path="/contact" element={<PageContact />} />
         <Route path="/gallery" element={<PageGallery />} />
         <Route path="/blogs" element={<Blog />} />
+        <Route path="/reservation" element={<Reservation />} />
 
       </Routes>
     

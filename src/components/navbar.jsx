@@ -62,11 +62,11 @@ const Navbar = () => {
                     isAtTop ? 'bg-transparent' : 'bg-black/10 backdrop-blur-[1px]'
                 } ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}
             >
-                <div className="flex-1">
+                <Link to='/reservation' className="flex-1">
                     <div className="font4 text-white w-max">Reservation</div>
-                </div>
+                </Link>
 
-                <div className="flex-1 flex justify-center" ref={logoRef}>
+                <Link to='/' className="flex-1 flex justify-center" ref={logoRef}>
                     <img
                         className='h-full object-contain transition-all duration-200 max-h-[170px]'
                         src="/src/assets/image/nobg-Logo.png"
@@ -76,7 +76,7 @@ const Navbar = () => {
                             height: isAtTop ? '170px' : '120px'
                         }}
                     />
-                </div>
+                </Link>
 
                 <div className="flex-1 flex justify-end">
                     <div className="flex items-center gap-4">
@@ -118,14 +118,14 @@ const Navbar = () => {
                             className={`menu-link ${isActive('/') ? 'text-[#f3c97c]' : ''}`}
                             onClick={closeMenu}
                         >
-                            <span className='menu-title'>HOME</span>
+                            <span className='menu-title'>Home</span>
                         </Link>
                         <Link 
                             to="/ourmenu" 
                             className={`menu-link ${isActive('/ourmenu') ? 'text-[#f3c97c]' : ''}`}
                             onClick={closeMenu}
                         >
-                            <span className='menu-title'>OurMenu</span>
+                            <span className='menu-title'>Our Menu</span>
                         </Link>
                         <Link 
                             to="/aboutus" 
@@ -146,14 +146,14 @@ const Navbar = () => {
                             className={`menu-link ${isActive('/contact') ? 'text-[#f3c97c]' : ''}`}
                             onClick={closeMenu}
                         >
-                            <span className='menu-title'>Contact</span>
+                            <span className='menu-title'>Contact Us</span>
                         </Link>
                         <Link 
                             to="/blogs" 
                             className={`menu-link ${isActive('/blogs') ? 'text-[#f3c97c]' : ''}`}
                             onClick={closeMenu}
                         >
-                            <span className='menu-title'>BLOGS</span>
+                            <span className='menu-title'>Blogs</span>
                         </Link>
                     </ul>
                 </div>
