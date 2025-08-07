@@ -41,7 +41,7 @@ const AboutUs = () => {
         {/* Right Image */}
         <div className="h-[400px] w-[300px]">
           <img
-            src="/src/assets/image/food2.jpg"
+            src="/assets/image/food2.jpg"
             alt="Dessert"
             className="w-full h-full object-cover"
           />

@@ -69,7 +69,7 @@ const Navbar = () => {
                 <Link to='/' className="flex-1 flex justify-center" ref={logoRef}>
                     <img
                         className='h-full object-contain transition-all duration-200 max-h-[170px]'
-                        src="/assets/image/nobg-Logo.png"
+                        src="/assets/image/nobg-logo.png"
                         alt="logo"
                         style={{
                             width: isAtTop ? '200px' : '150px',
