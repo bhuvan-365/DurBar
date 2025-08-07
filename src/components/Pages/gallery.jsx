@@ -5,15 +5,15 @@ import { useNavigate } from 'react-router-dom';
 const gallery = () => {
   const navigate = useNavigate();
   const menuItems = [
-    { image: '/src/assets/image/food.jpg', alt: 'Starters', path: '/starters' },
-    { image: '/src/assets/image/food2.jpg', alt: 'Main Courses', path: '/main-courses' },
-    { image: '/src/assets/image/food.jpg', alt: 'Desserts', path: '/desserts' },
-    { image: '/src/assets/image/food.jpg', alt: 'Beverages', path: '/beverages' },
-    { image: '/src/assets/image/food2.jpg', alt: 'Tandoori', path: '/tandoori' },
-    { image: '/src/assets/image/food.jpg', alt: 'Vegan', path: '/vegan' },
-    { image: '/src/assets/image/food2.jpg', alt: 'Special Rice', path: '/special-rice' },
-    { image: '/src/assets/image/food.jpg', alt: 'Chutneys', path: '/chutneys' },
-    { image: '/src/assets/image/food2.jpg', alt: 'Nepali Thali', path: '/nepali-thali' },
+    { image: '/assets/image/food.jpg', alt: 'Starters', path: '/starters' },
+    { image: '/assets/image/food2.jpg', alt: 'Main Courses', path: '/main-courses' },
+    { image: '/assets/image/food.jpg', alt: 'Desserts', path: '/desserts' },
+    { image: '/assets/image/food.jpg', alt: 'Beverages', path: '/beverages' },
+    { image: '/assets/image/food2.jpg', alt: 'Tandoori', path: '/tandoori' },
+    { image: '/assets/image/food.jpg', alt: 'Vegan', path: '/vegan' },
+    { image: '/assets/image/food2.jpg', alt: 'Special Rice', path: '/special-rice' },
+    { image: '/assets/image/food.jpg', alt: 'Chutneys', path: '/chutneys' },
+    { image: '/assets/image/food2.jpg', alt: 'Nepali Thali', path: '/nepali-thali' },
   ];
   return (
     <>

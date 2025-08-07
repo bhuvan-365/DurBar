@@ -48,7 +48,7 @@ const AboutUs = () => {
   return (
     <section className='bg-[#0b1315]'>
       {/* Hero Banner */}
-      <div className="relative w-full h-[80vh] bg-[url('/src/assets/image/homebanner.jpg')] bg-cover bg-center">
+      <div className="relative w-full h-[80vh] bg-[url('/assets/image/homebanner.jpg')] bg-cover bg-center">
         <div className="absolute inset-0 bg-black/30"></div>
         <div className="relative z-10 flex items-center justify-center h-full">
           <div className="flex justify-center items-center gap-8 text-[#C9AB81]">
@@ -132,7 +132,7 @@ const AboutUs = () => {
           <div className="hidden lg:block flex-shrink-0">
             <img
               className='w-[200px] h-[300px] object-cover'
-              src="/src/assets/image/food2.jpg"
+              src="/assets/image/food2.jpg"
               alt="Our restaurant"
             />
           </div>
@@ -144,7 +144,7 @@ const AboutUs = () => {
         <div className='relative w-full h-72 my-20'>
           <img 
             className='w-full h-full object-center object-cover' 
-            src="/src/assets/image/food.jpg" 
+            src="/assets/image/food.jpg" 
             alt="Restaurant video preview" 
           />
           <div className="absolute inset-0 flex items-center justify-center">

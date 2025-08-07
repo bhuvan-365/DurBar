@@ -9,19 +9,19 @@ const OurMenu = () => {
   const itemsPerView = 4;
 
   const [menuHeadItems] = useState([
-    { id: 1, title: "APPETIZER", image: "/src/assets/image/food.jpg" },
-    { id: 2, title: "TANDOORI", image: "/src/assets/image/food.jpg" },
-    { id: 3, title: "BREADS", image: "/src/assets/image/food.jpg" },
-    { id: 4, title: "INDIAN SPECIALTIES VEG", image: "/src/assets/image/food.jpg" },
-    { id: 5, title: "VEGAN ITEMS", image: "/src/assets/image/food.jpg" },
-    { id: 6, title: "INDIAN SPECIALTIES CHICKEN", image: "/src/assets/image/food.jpg" },
-    { id: 7, title: "INDIAN SPECIALTIES NON-VEG", image: "/src/assets/image/food.jpg" },
-    { id: 8, title: "SPECIAL RICE", image: "/src/assets/image/food.jpg" },
-    { id: 9, title: "NEPALI THALI", image: "/src/assets/image/food.jpg" },
-    { id: 10, title: "SEA FOOD SPECIAL", image: "/src/assets/image/food.jpg" },
-    { id: 11, title: "NEPALI AUTHENTIC FOOD", image: "/src/assets/image/food.jpg" },
-    { id: 12, title: "DESSERT", image: "/src/assets/image/food.jpg" },
-    { id: 13, title: "CHUTNEY", image: "/src/assets/image/food.jpg" },
+    { id: 1, title: "APPETIZER", image: "/assets/image/food.jpg" },
+    { id: 2, title: "TANDOORI", image: "/assets/image/food.jpg" },
+    { id: 3, title: "BREADS", image: "/assets/image/food.jpg" },
+    { id: 4, title: "INDIAN SPECIALTIES VEG", image: "/assets/image/food.jpg" },
+    { id: 5, title: "VEGAN ITEMS", image: "/assets/image/food.jpg" },
+    { id: 6, title: "INDIAN SPECIALTIES CHICKEN", image: "/assets/image/food.jpg" },
+    { id: 7, title: "INDIAN SPECIALTIES NON-VEG", image: "/assets/image/food.jpg" },
+    { id: 8, title: "SPECIAL RICE", image: "/assets/image/food.jpg" },
+    { id: 9, title: "NEPALI THALI", image: "/assets/image/food.jpg" },
+    { id: 10, title: "SEA FOOD SPECIAL", image: "/assets/image/food.jpg" },
+    { id: 11, title: "NEPALI AUTHENTIC FOOD", image: "/assets/image/food.jpg" },
+    { id: 12, title: "DESSERT", image: "/assets/image/food.jpg" },
+    { id: 13, title: "CHUTNEY", image: "/assets/image/food.jpg" },
   ]);
 
    const menuItems = [
@@ -32,61 +32,61 @@ const OurMenu = () => {
         name: 'Beef Burger Meal',
         price: '$32',
         description: 'Classic greek salad, barrel aged feta cheese, bread',
-        image: "/src/assets/image/food.jpg"
+        image: "/assets/image/food.jpg"
       },
       {
         name: 'Roasted Lamb Rump',
         price: '$25',
         description: 'Grilled lamb cutlets, pomegranate glaze, butternut squash',
-        image: "/src/assets/image/food.jpg"
+        image: "/assets/image/food.jpg"
       },
       {
         name: 'Pan Seared Sea Bass',
         price: '$38',
         description: 'Saffron and mussel\'s broth, new potatoes, edamame beans',
-        image: "/src/assets/image/food.jpg"
+        image: "/assets/image/food.jpg"
       },
       {
         name: 'King Prawns and Lobster',
         price: '$38',
         description: 'Creamy saffron, sauce Vierge',
-        image: "/src/assets/image/food.jpg"
+        image: "/assets/image/food.jpg"
       },
       {
         name: 'Citrus Cured Salmon',
         price: '$41',
         description: 'Horseradish creme fraiche, beetroot mousse, oil',
-        image: "/src/assets/image/food.jpg"
+        image: "/assets/image/food.jpg"
       },
       {
         name: 'Pan Seared Scallops',
         price: '$29',
         description: 'Saffron, celeriac puree, black pudding, olive oil',
-        image: "/src/assets/image/food.jpg"
+        image: "/assets/image/food.jpg"
       },
       {
         name: 'Baked Camembert',
         price: '$25',
         description: 'Red onion marmalade, garlic Focaccia bread, grilled figs',
-        image: "/src/assets/image/food.jpg"
+        image: "/assets/image/food.jpg"
       },
       {
         name: 'Braised Ox Cheek Ravioli',
         price: '$23',
         description: 'Mediterranean olives casserole, celeriac puree, mushrooms',
-        image: "/src/assets/image/food.jpg"
+        image: "/assets/image/food.jpg"
       },
       {
         name: 'Corn Fed Chicken',
         price: '$17',
         description: 'Wild mushrooms, truffle potatoes, braised leeks, carrots',
-        image: "/src/assets/image/food.jpg"
+        image:"/assets/image/food.jpg"
       },
       {
         name: 'Nduja Pork Chicken Terrine',
         price: '$41',
         description: 'Smoked duck breast, pistachio, smoked pancetta',
-        image: "/src/assets/image/food.jpg"
+        image: "/assets/image/food.jpg"
       },
     ],
 
@@ -96,61 +96,61 @@ const OurMenu = () => {
         name: 'xxxxx',
         price: '$32',
         description: 'Classic greek salad, barrel aged feta cheese, bread',
-        image: "/src/assets/image/food.jpg"
+        image: "/assets/image/food.jpg"
       },
       {
         name: 'Roasted Lamb Rump',
         price: '$25',
         description: 'Grilled lamb cutlets, pomegranate glaze, butternut squash',
-        image: "/src/assets/image/food.jpg"
+        image: "/assets/image/food.jpg"
       },
       {
         name: 'Pan Seared Sea Bass',
         price: '$38',
         description: 'Saffron and mussel\'s broth, new potatoes, edamame beans',
-        image: "/src/assets/image/food.jpg"
+        image: "/assets/image/food.jpg"
       },
       {
         name: 'King Prawns and Lobster',
         price: '$38',
         description: 'Creamy saffron, sauce Vierge',
-        image: "/src/assets/image/food.jpg"
+        image: "/assets/image/food.jpg"
       },
       {
         name: 'Citrus Cured Salmon',
         price: '$41',
         description: 'Horseradish creme fraiche, beetroot mousse, oil',
-        image: "/src/assets/image/food.jpg"
+        image: "/assets/image/food.jpg"
       },
       {
         name: 'Pan Seared Scallops',
         price: '$29',
         description: 'Saffron, celeriac puree, black pudding, olive oil',
-        image: "/src/assets/image/food.jpg"
+        image: "/assets/image/food.jpg"
       },
       {
         name: 'Baked Camembert',
         price: '$25',
         description: 'Red onion marmalade, garlic Focaccia bread, grilled figs',
-        image: "/src/assets/image/food.jpg"
+        image: "/assets/image/food.jpg"
       },
       {
         name: 'Braised Ox Cheek Ravioli',
         price: '$23',
         description: 'Mediterranean olives casserole, celeriac puree, mushrooms',
-        image: "/src/assets/image/food.jpg"
+        image: "/assets/image/food.jpg"
       },
       {
         name: 'Corn Fed Chicken',
         price: '$17',
         description: 'Wild mushrooms, truffle potatoes, braised leeks, carrots',
-        image: "/src/assets/image/food.jpg"
+        image: "/assets/image/food.jpg"
       },
       {
         name: 'Nduja Pork Chicken Terrine',
         price: '$41',
         description: 'Smoked duck breast, pistachio, smoked pancetta',
-        image: "/src/assets/image/food.jpg"
+        image: "/assets/image/food.jpg"
       },
     ],
   ]
@@ -233,7 +233,7 @@ const OurMenu = () => {
       <div
         className="absolute top-0 left-0 w-full h-[100vh] bg-cover bg-center z-0"
         style={{
-          backgroundImage: `url('/src/assets/image/homebanner.jpg')`,
+          backgroundImage: `url('/assets/image/homebanner.jpg')`,
           transform: `translateY(${offsetY * 0.4}px)`,
         }}
       />
