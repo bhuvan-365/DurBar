@@ -27,7 +27,7 @@ const AboutUs = () => {
         {/* Left Image */}
         <div className="h-[400px] w-[300px]">
           <img
-            src="/src/assets/image/food.jpg"
+            src="/assets/image/food.jpg"
             alt="Cafe Interior"
             className="w-full h-full object-cover"
           />

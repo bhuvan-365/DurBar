@@ -35,7 +35,7 @@ const OurMenu = () => {
                 <div className="flex flex-col items-center text-center cursor-pointer">
                     <div className="relative group w-[300px] h-[400px] overflow-hidden mb-6">
                         <img
-                            src="/src/assets/image/food.jpg"
+                            src="/assets/image/food.jpg"
                             alt="Starters"
                             className="w-full h-full object-cover"
                         />
@@ -54,7 +54,7 @@ const OurMenu = () => {
                 <div className="flex flex-col items-center text-center cursor-pointer">
                     <div className="relative group w-[300px] h-[400px] overflow-hidden mb-6">
                         <img
-                            src="/src/assets/image/food2.jpg"
+                            src="/assets/image/food2.jpg"
                             alt="Main Courses"
                             className="w-full h-full object-cover"
                         />
@@ -73,7 +73,7 @@ const OurMenu = () => {
                 <div className="flex flex-col items-center text-center cursor-pointer">
                     <div className="relative group w-[300px] h-[400px] overflow-hidden mb-6">
                         <img
-                            src="/src/assets/image/food.jpg"
+                            src="/assets/image/food.jpg"
                             alt="Desserts"
                             className="w-full h-full object-cover"
                         />

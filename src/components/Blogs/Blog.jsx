@@ -15,7 +15,7 @@ const BlogStandard = () => {
           <div>
             {/* Blog Image */}
             <img
-              src="/src/assets/image/interior.jpg" // Replace with actual path
+              src="/assets/image/interior.jpg" // Replace with actual path
               alt="Elegant Food"
               className="w-full h-auto rounded-md mb-6"
             />
@@ -73,12 +73,12 @@ const BlogStandard = () => {
             <h3 className="text-[#C9AB81] font-semibold mb-3">INSTAGRAM</h3>
             <div className="grid grid-cols-3 gap-2">
               {/* Replace with real image URLs */}
-              <img src="/src/assets/image/food.jpg" alt="" className="w-full h-[60px] object-cover" />
-              <img src="/src/assets/image/food2.jpg" alt="" className="w-full h-[60px] object-cover" />
-              <img src="/src/assets/image/chef.jpg" alt="" className="w-full h-[60px] object-cover" />
-              <img src="/src/assets/image/food.jpg" alt="" className="w-full h-[60px] object-cover" />
-              <img src="/src/assets/image/food2.jpg" alt="" className="w-full h-[60px] object-cover" />
-              <img src="/src/assets/image/interior.jpg" alt="" className="w-full h-[60px] object-cover" />
+              <img src="/assets/image/food.jpg" alt="" className="w-full h-[60px] object-cover" />
+              <img src="/assets/image/food2.jpg" alt="" className="w-full h-[60px] object-cover" />
+              <img src="/assets/image/chef.jpg" alt="" className="w-full h-[60px] object-cover" />
+              <img src="/assets/image/food.jpg" alt="" className="w-full h-[60px] object-cover" />
+              <img src="/assets/image/food2.jpg" alt="" className="w-full h-[60px] object-cover" />
+              <img src="/assets/image/interior.jpg" alt="" className="w-full h-[60px] object-cover" />
             </div>
           </div>
 

@@ -69,7 +69,7 @@ const Navbar = () => {
                 <Link to='/' className="flex-1 flex justify-center" ref={logoRef}>
                     <img
                         className='h-full object-contain transition-all duration-200 max-h-[170px]'
-                        src="/src/assets/image/nobg-Logo.png"
+                        src="/assets/image/nobg-Logo.png"
                         alt="logo"
                         style={{
                             width: isAtTop ? '200px' : '150px',
@@ -81,7 +81,7 @@ const Navbar = () => {
                 <div className="flex-1 flex justify-end">
                     <div className="flex items-center gap-4">
                         <div className="call flex items-center gap-1 text-white">
-                            <img className='filter invert' src="/src/assets/svg/call.svg" alt="call icon" />
+                            <img className='filter invert' src="/assets/svg/call.svg" alt="call icon" />
                             <span>+977 9812345678</span>
                         </div>
                         <button
@@ -93,7 +93,7 @@ const Navbar = () => {
                                 className={`filter invert w-[40px] transition-transform duration-200 ${
                                     isMenuOpen ? 'rotate-90' : ''
                                 }`}
-                                src="/src/assets/svg/hamburger.svg"
+                                src="/assets/svg/hamburger.svg"
                                 alt="hamburger"
                             />
                         </button>
