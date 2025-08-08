@@ -16,23 +16,23 @@ function App() {
 
   return (
     <>
-      {/* <div className="line1 hidden lg:block border border-[#c9ab81] h-full rotate-180 fixed left-22 z-[9999]"></div>
-      <div className="line2 hidden lg:block border border-[#c9ab81] h-full rotate-180 fixed right-22 z-[9999]"></div> */}
-      <Navbar/>
- 
-      
-      <Routes>
-        <Route path='/' element={<Homec />} />
-        <Route path="/ourmenu" element={<PageOurMenu />} />
-        <Route path="/aboutus" element={<PageAbout />} />
-        <Route path="/contact" element={<PageContact />} />
-        <Route path="/gallery" element={<PageGallery />} />
-        <Route path="/blogs" element={<Blog />} />
-        <Route path="/reservation" element={<Reservation />} />
+      <section className='bg-[linear-gradient(90deg,_black_0%,_#0f172a_50%,_black_100%)]'>
+        <Navbar />
 
-      </Routes>
-    
-<SocialLinks />
+
+        <Routes>
+          <Route path='/' element={<Homec />} />
+          <Route path="/ourmenu" element={<PageOurMenu />} />
+          <Route path="/aboutus" element={<PageAbout />} />
+          <Route path="/contact" element={<PageContact />} />
+          <Route path="/gallery" element={<PageGallery />} />
+          <Route path="/blogs" element={<Blog />} />
+          <Route path="/reservation" element={<Reservation />} />
+
+        </Routes>
+
+        <SocialLinks />
+      </section>
     </>
   )
 }

@@ -3,8 +3,6 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import './datepicker.css'; // Custom styles to match your theme
 
-
-
 const peopleOptions = [
     '1 Person',
     '2 People',
@@ -49,18 +47,18 @@ const BookTable = () => {
 
     return (
         <>
-            <section className="relative bg-[#111d22] py-32 text-white text-center">
-                <svg className='absolute' xmlns="http://www.w3.org/2000/svg" width="224.136" height="259.25"><path fill="none" stroke="#9A7D57" stroke-width="1.5" stroke-miterlimit="10" d="M59.649 23.735L-.405 58.472m0 0l61.352 35.511 59.834-34.631m61.557 104.892L60.946 93.982-.412 129.466m0 .001l61.358 35.514 120.965-70.015m-60.704 104.893L60.946 164.98-.406 200.467m.001.001l60.48 35.007M-.408 45.049L38.218 22.99-.408.938m-.003 115.07l38.629-22.059L-.403 71.913m-.003 115.129l38.624-22.056-38.621-22.035m-.008 115.132l38.629-22.099-38.621-22.035M40.591 82.201H58.03l41.521-23.713-41.577-23.72H40.591m0 118.431H58.03l41.521-23.713-41.578-23.721H40.591m0 118.432H58.03l41.521-23.713-41.578-23.721H40.591m61.332-59.103h17.439l41.521-23.711-41.578-23.723h-17.383m.001 118.471h17.439l41.521-23.711-41.578-23.723h-17.383m61.335 11.936h17.439l41.521-23.713-41.578-23.721h-17.383M-.406 31.404l14.737-8.418-14.739-8.41m.003 87.826l14.736-8.418-14.742-8.411m-.001 87.83l14.743-8.421-14.742-8.41m.008 87.824l14.734-8.416-14.742-8.411M20.038 70.305h34.934l20.693-11.818-20.723-11.825H20.038m0 94.641h34.934l20.693-11.818-20.723-11.825H20.038m0 94.641h34.934l20.693-11.818-20.723-11.824H20.038m61.332-82.893h34.934l20.693-11.82-20.723-11.822H81.37m0 94.679h34.934l20.693-11.82-20.723-11.822H81.37m61.334-11.858h34.934l20.693-11.818-20.723-11.824h-34.904M55.79 58.484H-.261m56.051 70.998H-.261M55.79 200.48H-.261M117.122 93.982H61.071m56.051 70.998H61.071m117.383-35.498h-56.051"></path></svg>
-                {/* Heading */}
-                <p className="text-[#c9ab81] text-sm font2 tracking-wide mb-2">Reservations</p>
-                <div className="flex justify-center items-center gap-4 mb-6">
+            <section className="relative bg-[linear-gradient(90deg,_black_0%,_#0f172a_50%,_black_100%)] py-32 text-white text-center px-4 sm:px-8">
+                <svg className='absolute hidden sm:block' xmlns="http://www.w3.org/2000/svg" width="224.136" height="259.25"><path fill="none" stroke="#9A7D57" strokeWidth="1.5" strokeMiterlimit="10" d="M59.649 23.735L-.405 58.472m0 0l61.352 35.511 59.834-34.631m61.557 104.892L60.946 93.982-.412 129.466m0 .001l61.358 35.514 120.965-70.015m-60.704 104.893L60.946 164.98-.406 200.467m.001.001l60.48 35.007M-.408 45.049L38.218 22.99-.408.938m-.003 115.07l38.629-22.059L-.403 71.913m-.003 115.129l38.624-22.056-38.621-22.035m-.008 115.132l38.629-22.099-38.621-22.035M40.591 82.201H58.03l41.521-23.713-41.577-23.72H40.591m0 118.431H58.03l41.521-23.713-41.578-23.721H40.591m0 118.432H58.03l41.521-23.713-41.578-23.721H40.591m61.332-59.103h17.439l41.521-23.711-41.578-23.723h-17.383m.001 118.471h17.439l41.521-23.711-41.578-23.723h-17.383m61.335 11.936h17.439l41.521-23.713-41.578-23.721h-17.383M-.406 31.404l14.737-8.418-14.739-8.41m.003 87.826l14.736-8.418-14.742-8.411m-.001 87.83l14.743-8.421-14.742-8.41m.008 87.824l14.734-8.416-14.742-8.411M20.038 70.305h34.934l20.693-11.818-20.723-11.825H20.038m0 94.641h34.934l20.693-11.818-20.723-11.825H20.038m0 94.641h34.934l20.693-11.818-20.723-11.824H20.038m61.332-82.893h34.934l20.693-11.82-20.723-11.822H81.37m0 94.679h34.934l20.693-11.82-20.723-11.822H81.37m61.334-11.858h34.934l20.693-11.818-20.723-11.824h-34.904M55.79 58.484H-.261m56.051 70.998H-.261M55.79 200.48H-.261M117.122 93.982H61.071m56.051 70.998H61.071m117.383-35.498h-56.051"></path></svg>
+
+                <p className="text-sm not-italic font-normal text-[19px] leading-[28px] text-[rgb(201,171,129)] font2 tracking-wide mb-2">Reservations</p>
+                <div className="flex flex-wrap justify-center items-center gap-4 mb-6">
                     <div className="decor">
                         <svg xmlns="http://www.w3.org/2000/svg" width="41.125" height="9.146">
                             <path fill="none" stroke="#9C7C57" d="M40.881 8.576L20.562.591.244 8.576" />
                             <path fill="none" stroke="#9C7C57" d="M40.881.591L20.562 8.576.243.591" />
                         </svg>
                     </div>
-                    <h2 className="text-5xl font-semibold tracking-[0.4em] text-[#C9AB81] ">BOOK A TABLE</h2>
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-[0.4em] text-[#C9AB81] ">BOOK A TABLE</h2>
                     <div className="decor">
                         <svg xmlns="http://www.w3.org/2000/svg" width="41.125" height="9.146">
                             <path fill="none" stroke="#9C7C57" d="M40.881 8.576L20.562.591.244 8.576" />
@@ -70,9 +68,9 @@ const BookTable = () => {
                 </div>
 
                 {/* Form */}
-                <div className="flex flex-wrap justify-center gap-10 text-left mt-20">
+                <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center gap-6 sm:gap-10 text-left mt-10 sm:mt-20 w-full max-w-[800px] mx-auto">
                     {/* Person Dropdown */}
-                    <div className="relative w-[180px] h-11">
+                    <div className="relative w-full sm:w-[180px] h-11">
                         <button
                             onClick={() => setShowPersonDropdown(!showPersonDropdown)}
                             className="w-full border border-[#c9ab81] px-4 py-2 bg-transparent text-left"
@@ -80,7 +78,7 @@ const BookTable = () => {
                             {person}
                         </button>
                         {showPersonDropdown && (
-                            <ul className="absolute z-10 w-full bg-[#0b1315] border border-[#c9ab81] mt-1 max-h-60 overflow-y-auto">
+                            <ul className="absolute z-10 w-full bg-[linear-gradient(90deg,_black_0%,_#0f172a_50%,_black_100%)] border border-[#c9ab81] mt-1 max-h-60 overflow-y-auto">
                                 {peopleOptions.map((p, i) => (
                                     <li
                                         key={i}
@@ -99,7 +97,7 @@ const BookTable = () => {
                     </div>
 
                     {/* Date Picker */}
-                    <div className="relative w-[180px] h-11">
+                    <div className="relative w-full sm:w-[180px] h-11">
                         <DatePicker
                             selected={selectedDate}
                             onChange={(date) => setSelectedDate(date)}
@@ -110,7 +108,7 @@ const BookTable = () => {
                     </div>
 
                     {/* Time Picker */}
-                    <div className="relative w-[180px] h-11">
+                    <div className="relative w-full sm:w-[180px] h-11">
                         <button
                             onClick={() => setShowTimeDropdown(!showTimeDropdown)}
                             className="w-full border border-[#c9ab81] px-4 py-2 bg-transparent text-left"
@@ -118,7 +116,7 @@ const BookTable = () => {
                             {selectedTime}
                         </button>
                         {showTimeDropdown && (
-                            <ul className="absolute z-10 w-full bg-[#0b1315] border border-[#c9ab81] mt-1 max-h-60 overflow-y-auto">
+                            <ul className="absolute z-10 w-full bg-[linear-gradient(90deg,_black_0%,_#0f172a_50%,_black_100%)] border border-[#c9ab81] mt-1 max-h-60 overflow-y-auto">
                                 {timeSlots.map((time, i) => (
                                     <li
                                         key={i}
@@ -136,7 +134,7 @@ const BookTable = () => {
                     </div>
 
                     {/* Button */}
-                    <button className="border border-[#c9ab81] px-4 py-2 text-[#c9ab81] hover:bg-[#c9ab81] hover:text-black transition h-11">
+                    <button className="border border-[#c9ab81] px-4 py-2 text-[#c9ab81] hover:bg-[#c9ab81] hover:text-black transition h-11 w-full sm:w-[180px]">
                         BOOK NOW
                     </button>
                 </div>

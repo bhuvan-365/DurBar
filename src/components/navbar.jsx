@@ -58,12 +58,12 @@ const Navbar = () => {
         <>
             <nav
                 ref={navRef}
-                className={`fixed top-0 z-50 w-full flex items-center justify-between px-14 transition-transform duration-200 ${
+                className={`fixed top-0 z-50 w-full flex items-center justify-between px-[15px] md:px-14 transition-transform duration-200 ${
                     isAtTop ? 'bg-transparent' : 'bg-black/10 backdrop-blur-[1px]'
                 } ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}
             >
-                <Link to='/reservation' className="flex-1">
-                    <div className="font4 text-white w-max">Reservation</div>
+                <Link to='/reservation' className="flex-1 menu-link">
+                    <div className="font4 !text-white w-max menu-title">Reservation</div>
                 </Link>
 
                 <Link to='/' className="flex-1 flex justify-center" ref={logoRef}>
@@ -72,17 +72,19 @@ const Navbar = () => {
                         src="/assets/image/nobg-logo.png"
                         alt="logo"
                         style={{
-                            width: isAtTop ? '200px' : '150px',
-                            height: isAtTop ? '170px' : '120px'
+                            width: isAtTop ? '150px' : '100px',
+                            height: isAtTop ? '150px' : '90px'
                         }}
                     />
                 </Link>
 
                 <div className="flex-1 flex justify-end">
                     <div className="flex items-center gap-4">
-                        <div className="call flex items-center gap-1 text-white">
+                        <div className="hidden md:block">
+                        <div className="call  flex items-center gap-1 text-white">
                             <img className='filter invert' src="/assets/svg/call.svg" alt="call icon" />
-                            <span>+977 9812345678</span>
+                            <span >+977 9812345678</span>
+                        </div>
                         </div>
                         <button
                             className="ham focus:outline-none"

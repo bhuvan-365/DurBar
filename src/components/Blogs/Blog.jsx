@@ -2,7 +2,7 @@ import React from 'react';
 
 const BlogStandard = () => {
   return (
-    <div className="bg-[#0b1315] text-white min-h-screen font-sans px-4 py-10 lg:px-20 pt-52 ">
+    <div className="bg-[linear-gradient(90deg,_black_0%,_#0f172a_50%,_black_100%)] text-white min-h-screen font-sans px-4 py-10 lg:px-20 pt-52 ">
       {/* Header */}
       <header className="mb-10">
         <h1 className="text-lg text-[#C9AB81] tracking-widest">BLOG STANDARD</h1>
@@ -41,10 +41,10 @@ const BlogStandard = () => {
 
           {/* Quote Section */}
           <div className="bg-[#101214] p-8 mt-12 border-l-4 border-[#C9AB81]">
-            <p className="font2 text-center text-[#C9AB81] my-4">
+            <p className="font2 not-italic font-normal text-[19px] leading-[28px] text-center text-[#C9AB81] my-4">
               “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed tempor incididunt ut labore et dolore magna.”
             </p>
-            <p className="text-sm text-white font1 text-center">Justin Roy</p>
+            <p className="text-sm text-white font-medium text-[14px] leading-[30px] tracking-[2px] font1 text-center">Justin Roy</p>
           </div>
         </main>
 

@@ -5,37 +5,20 @@
 
 .font1 {
   font-family: "Open Sans Condensed";
-  font-style: normal;
-  font-weight: 500;
 
-  font-size: 14px;
-  line-height: 30px;
-  letter-spacing: 2px;
 }
-
 .font-pop {
   font-family: "Poppins", sans-serif;
 
 }
-
 .font11 {
   font-family: "Open Sans Condensed";
-  font-style: normal;
 
-  color: rgb(255, 255, 255);
-  font-size: 2.5rem;
-  line-height: 50px;
-  letter-spacing: 12px;
-  color: rgb(201, 171, 129);
 }
 
 .font2 {
   font-family: 'Miniver', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 19px;
-  line-height: 28px;
-  color: rgb(201, 171, 129);
+
 }
 
 .font22 {
@@ -45,19 +28,13 @@
 
 .font3 {
   font-family: 'caviar_dreamsbold', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 61px;
+
   color: rgb(201, 171, 129);
 }
 
 .hero-text {
   font-family: "Metropolis1920 Regular";
-  font-weight: 100;
-  font-style: normal;
-  font-size: 7rem;
-  line-height: 145px;
+
   color: rgb(201, 171, 129);
 }
 
